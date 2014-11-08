@@ -13,18 +13,25 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        createLayout()
+        //createLayout()
     }
     
+  override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated);
+    
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     func createLayout() {
-        var gameScore = PFObject(className: "GameScore")
+        var gameScore = PFObject(className: "TestClass")
         gameScore.setObject(1337, forKey: "score")
-        gameScore.setObject("Sean Plott", forKey: "playerName")
+        gameScore.setObject("Nooney Nooney", forKey: "playerName")
+        
         gameScore.saveInBackgroundWithBlock {
             (success: Bool!, error: NSError!) -> Void in
             if (success != nil) {
