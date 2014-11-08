@@ -8,12 +8,51 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSignUpViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         createLayout()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        let logInViewController:PFLogInViewController = PFLogInViewController()
+        logInViewController.delegate = self
+        
+        let signUpViewController = PFSignUpViewController()
+        signUpViewController.delegate = self
+        
+        logInViewController.signUpController = signUpViewController
+        presentViewController(logInViewController, animated: true, completion: nil)
+        
+    }
+    
+    func logInViewController(logInController: PFLogInViewController!, shouldBeginLogInWithUsername username: String!, password: String!) -> Bool {
+        
+        if ((username != nil) && (password != nil) && (countElements(username) != 0) && (countElements(password) != 0))
+        {
+            return true
+        }
+            
+        let alert = UIAlertView()
+        alert.title = "Missing Information"
+        alert.message = "Make Sure You Fill Out All Your Information"
+        alert.show()
+        return false
+    }
+    
+    func logInViewController(logInController: PFLogInViewController!, didLogInUser user: PFUser!) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func logInViewController(logInController: PFLogInViewController!, didFailToLogInWithError error: NSError!) {
+        println("Failed to Log In")
+    }
+    
+    func logInViewControllerDidCancelLogIn(logInController: PFLogInViewController!) {
+        navigationController?.popViewControllerAnimated(true)
     }
     
     override func didReceiveMemoryWarning() {
