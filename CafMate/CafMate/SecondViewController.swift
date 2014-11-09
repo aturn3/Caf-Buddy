@@ -8,7 +8,15 @@
 
 import UIKit
 
+
 class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
+    /*
+    
+    }*/
+    
+    
+
+    
     
     let statusBarHeight = 20;
     
@@ -42,6 +50,9 @@ class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -49,6 +60,13 @@ class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
     
     
     func initInterface() {
+        /*PFCloud.callFunctionInBackground("getMealsToday", withParameters:nil) {
+            (result: AnyObject!, error: NSError!) -> Void in
+            if error == nil {
+                println(result)
+            }*/
+       
+            
         var labelWidth = 325;
         
         self.view.backgroundColor = colorWithHexString(COLOR_MAIN_BACKGROUND_OFFWHITE)

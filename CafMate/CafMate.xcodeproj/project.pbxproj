@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49B76CF01A0F0C8200722376 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B76CEF1A0F0C8100722376 /* CustomTableViewCell.swift */; };
+		49B76CF41A0F562000722376 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B76CF31A0F562000722376 /* SwiftyJSON.swift */; };
 		D8E4FCCB1A0ED319005C91F7 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E4FCCA1A0ED319005C91F7 /* ParseUI.framework */; };
 		E00ECCA31A0EE6FF00582CCC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00ECCA21A0EE6FF00582CCC /* Social.framework */; };
 		E00ECCA51A0EE70600582CCC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00ECCA41A0EE70600582CCC /* Accounts.framework */; };
-		49B76CF01A0F0C8200722376 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B76CEF1A0F0C8100722376 /* CustomTableViewCell.swift */; };
 		FF69541F1A0E9E580076EC8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69541E1A0E9E580076EC8F /* AppDelegate.swift */; };
 		FF6954211A0E9E580076EC8F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6954201A0E9E580076EC8F /* FirstViewController.swift */; };
 		FF6954231A0E9E580076EC8F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6954221A0E9E580076EC8F /* SecondViewController.swift */; };
@@ -18,8 +19,8 @@
 		FF6954281A0E9E580076EC8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6954271A0E9E580076EC8F /* Images.xcassets */; };
 		FF69542B1A0E9E580076EC8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6954291A0E9E580076EC8F /* LaunchScreen.xib */; };
 		FF6954371A0E9E580076EC8F /* CafMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6954361A0E9E580076EC8F /* CafMateTests.swift */; };
-		FFA13E941A0EB06C00EE9078 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA13E931A0EB06C00EE9078 /* Parse.framework */; };
-		FFA13E961A0EB07500EE9078 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA13E951A0EB07500EE9078 /* Bolts.framework */; };
+		FFA13E941A0EB06C00EE9078 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA13E931A0EB06C00EE9078 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		FFA13E961A0EB07500EE9078 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA13E951A0EB07500EE9078 /* Bolts.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		FFE29FBC1A0EB3A90050FD66 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */; };
 		FFE29FC71A0EBAFB0050FD66 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FBD1A0EBAFB0050FD66 /* AudioToolbox.framework */; };
 		FFE29FC81A0EBAFB0050FD66 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FBE1A0EBAFB0050FD66 /* CFNetwork.framework */; };
@@ -45,10 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49B76CEF1A0F0C8100722376 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		49B76CF31A0F562000722376 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D8E4FCCA1A0ED319005C91F7 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		E00ECCA21A0EE6FF00582CCC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E00ECCA41A0EE70600582CCC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		49B76CEF1A0F0C8100722376 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FF6954191A0E9E580076EC8F /* CafMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF69541D1A0E9E580076EC8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF69541E1A0E9E580076EC8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				FF69541E1A0E9E580076EC8F /* AppDelegate.swift */,
 				FFE29FD61A0ED8B30050FD66 /* Utilities */,
 				FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */,
+				49B76CF31A0F562000722376 /* SwiftyJSON.swift */,
 				FF6954201A0E9E580076EC8F /* FirstViewController.swift */,
 				FF6954221A0E9E580076EC8F /* SecondViewController.swift */,
 				49B76CEF1A0F0C8100722376 /* CustomTableViewCell.swift */,
@@ -299,6 +302,7 @@
 				FF6954231A0E9E580076EC8F /* SecondViewController.swift in Sources */,
 				FF69541F1A0E9E580076EC8F /* AppDelegate.swift in Sources */,
 				FFE29FD51A0ED8690050FD66 /* Utilities.swift in Sources */,
+				49B76CF41A0F562000722376 /* SwiftyJSON.swift in Sources */,
 				FF6954211A0E9E580076EC8F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
