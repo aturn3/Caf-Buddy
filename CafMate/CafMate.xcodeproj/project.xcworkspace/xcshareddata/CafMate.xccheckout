@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>011C2A37-86D2-46A3-854E-BA9266410D41</string>
+	<string>4D089D71-A6AF-455D-8B55-7E827D74A638</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CafMate</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>75C6D885A959FECF7FE0128CE278AFA44F30CFF9</key>
-		<string>ssh://github.com/aturn3/Caf-Buddy.git</string>
+		<string>github.com:aturn3/Caf-Buddy.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CafMate/CafMate.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/aturn3/Caf-Buddy.git</string>
+	<string>github.com:aturn3/Caf-Buddy.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>75C6D885A959FECF7FE0128CE278AFA44F30CFF9</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Caf-Buddy</string>
+			<string>CodeBuddyApp</string>
 		</dict>
 	</array>
 </dict>

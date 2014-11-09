@@ -29,6 +29,7 @@ class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
     var timeRange = NSMutableArray()
     var chosenStartTime = NSDate()
     var chosenEndTime = NSDate()
+    var chosenMealType = -1
     
     
     
@@ -129,6 +130,7 @@ class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if (pickerView == mealTypePickerView) {
+            chosenMealType = row
             mealTypeTextField.text = mealTypesArr[row]
             timeRange = getPickerOptions(row)
             mealTimePickerView.reloadAllComponents()
@@ -204,8 +206,8 @@ class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
         theMeal["matched"] = false
         theMeal["start"] = chosenStartTime
         theMeal["end"] = chosenEndTime
-        theMeal["type"] = 1
-        //theMeal["userId"] = PFUser.currentUser()
+        theMeal["type"] = chosenMealType
+        theMeal["userId"] = PFUser.currentUser()
         theMeal.saveInBackgroundWithBlock {
             
             (success: Bool!, error: NSError!) -> Void in
