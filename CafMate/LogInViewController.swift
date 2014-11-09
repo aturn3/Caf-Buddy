@@ -186,7 +186,17 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
     
     
     func createLayout() {
-       
+        var gameScore = PFObject(className: "TestClass")
+        gameScore.setObject(1337, forKey: "score")
+        gameScore.setObject("Nooney Nooney", forKey: "playerName")
+        
+        gameScore.saveInBackgroundWithBlock {
+            (success: Bool!, error: NSError!) -> Void in
+            if (success != nil) {
+                NSLog("Object created with id: \(gameScore.objectId)")
+            } else {
+                NSLog("%@", error)
+            }
         }
         
         //var myTextField: UITextField = UITextField(frame: CGRect(x: screenwidth-thewid/2, y: 0, width: 200, height: 40.00))
@@ -199,6 +209,7 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
         self.view.addSubview(myTextField)
         myTextField.backgroundColor = UIColor.redColor()
         myTextField.text = "some string"*/
+    }
     
     
 }
