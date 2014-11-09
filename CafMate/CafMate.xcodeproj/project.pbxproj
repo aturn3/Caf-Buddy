@@ -19,6 +19,9 @@
 		FF6954371A0E9E580076EC8F /* CafMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6954361A0E9E580076EC8F /* CafMateTests.swift */; };
 		FFA13E941A0EB06C00EE9078 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA13E931A0EB06C00EE9078 /* Parse.framework */; };
 		FFA13E961A0EB07500EE9078 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA13E951A0EB07500EE9078 /* Bolts.framework */; };
+		FFC1D4E81A0F376C005643E0 /* feedIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC1D4E71A0F376C005643E0 /* feedIcon@2x.png */; };
+		FFC1D4EB1A0F3826005643E0 /* createNewIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC1D4E91A0F3826005643E0 /* createNewIcon@2x.png */; };
+		FFC1D4EC1A0F3826005643E0 /* feedIcon2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC1D4EA1A0F3826005643E0 /* feedIcon2@2x.png */; };
 		FFE29FBC1A0EB3A90050FD66 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */; };
 		FFE29FC71A0EBAFB0050FD66 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FBD1A0EBAFB0050FD66 /* AudioToolbox.framework */; };
 		FFE29FC81A0EBAFB0050FD66 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FBE1A0EBAFB0050FD66 /* CFNetwork.framework */; };
@@ -60,6 +63,9 @@
 		FF6954361A0E9E580076EC8F /* CafMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafMateTests.swift; sourceTree = "<group>"; };
 		FFA13E931A0EB06C00EE9078 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		FFA13E951A0EB07500EE9078 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FFC1D4E71A0F376C005643E0 /* feedIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedIcon@2x.png"; sourceTree = "<group>"; };
+		FFC1D4E91A0F3826005643E0 /* createNewIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createNewIcon@2x.png"; sourceTree = "<group>"; };
+		FFC1D4EA1A0F3826005643E0 /* feedIcon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedIcon2@2x.png"; sourceTree = "<group>"; };
 		FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = ../LogInViewController.swift; sourceTree = "<group>"; };
 		FFE29FBD1A0EBAFB0050FD66 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FFE29FBE1A0EBAFB0050FD66 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -144,6 +150,7 @@
 		FF69541B1A0E9E580076EC8F /* CafMate */ = {
 			isa = PBXGroup;
 			children = (
+				FFC1D4E61A0F3732005643E0 /* Images */,
 				FF69541E1A0E9E580076EC8F /* AppDelegate.swift */,
 				FFE29FD61A0ED8B30050FD66 /* Utilities */,
 				FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */,
@@ -181,6 +188,16 @@
 				FF6954351A0E9E580076EC8F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFC1D4E61A0F3732005643E0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1D4E91A0F3826005643E0 /* createNewIcon@2x.png */,
+				FFC1D4EA1A0F3826005643E0 /* feedIcon2@2x.png */,
+				FFC1D4E71A0F376C005643E0 /* feedIcon@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		FFE29FD61A0ED8B30050FD66 /* Utilities */ = {
@@ -240,6 +257,7 @@
 				TargetAttributes = {
 					FF6954181A0E9E580076EC8F = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 65N622ETZ8;
 					};
 					FF69542F1A0E9E580076EC8F = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -271,6 +289,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC1D4EC1A0F3826005643E0 /* feedIcon2@2x.png in Resources */,
+				FFC1D4EB1A0F3826005643E0 /* createNewIcon@2x.png in Resources */,
+				FFC1D4E81A0F376C005643E0 /* feedIcon@2x.png in Resources */,
 				FF6954261A0E9E580076EC8F /* Main.storyboard in Resources */,
 				FF69542B1A0E9E580076EC8F /* LaunchScreen.xib in Resources */,
 				FF6954281A0E9E580076EC8F /* Images.xcassets in Resources */,
@@ -419,6 +440,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -426,6 +449,7 @@
 				INFOPLIST_FILE = CafMate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CafMate/CafMate-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -436,6 +460,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -443,6 +469,7 @@
 				INFOPLIST_FILE = CafMate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CafMate/CafMate-Bridging-Header.h";
 			};
 			name = Release;

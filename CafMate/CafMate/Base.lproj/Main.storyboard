@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Meals-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="CafMate" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,13 +38,31 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Meals" image="feedIcon2.png" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="d3q-MZ-8da"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1354" y="-560"/>
         </scene>
-        <!--Second-->
+        <!--Item-->
+        <scene sceneID="35X-vn-jiL">
+            <objects>
+                <navigationController id="TTX-gh-VYS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ayV-kV-Fei"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mfb-Zr-8fk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="ZnW-Sf-Rst"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lFG-Yv-HMf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="-560"/>
+        </scene>
+        <!--Create New-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="CafMate" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,11 +75,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Create New" image="createNewIcon.png" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="iQ7-af-gHA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="1354" y="480"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pQ6-ia-gXv">
+            <objects>
+                <navigationController id="kHr-QR-jij" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Eug-eh-t12"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hgh-Ei-NBv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="Co6-6u-WJN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tmj-eN-v3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="480"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="sa6-dK-tkf">
@@ -90,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mT-m5-9Wv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-38" y="-873"/>
+            <point key="canvasLocation" x="-446" y="-881"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -103,17 +139,17 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="TTX-gh-VYS" kind="relationship" relationship="viewControllers" id="ey3-sp-ngW"/>
+                        <segue destination="kHr-QR-jij" kind="relationship" relationship="viewControllers" id="czj-qo-tA5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-446" y="-4"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="createNewIcon.png" width="32" height="32"/>
+        <image name="feedIcon2.png" width="32" height="32"/>
     </resources>
 </document>

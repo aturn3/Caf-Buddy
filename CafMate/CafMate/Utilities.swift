@@ -10,6 +10,12 @@ import Foundation
 import UIKit
 
 let COLOR_MAIN_BACKGROUND_OFFWHITE = "#eaeaea"
+let COLOR_ACCENT_BLUE = "#0EDBEC"
+
+let NAV_BAR_HEIGHT = 44
+let STATUS_BAR_HEIGHT = 20
+let KEYBAORD_HEIGHT = 216
+let TOOLBAR_KEYBOARD_HEIGHT = 35
 
 
 func colorWithHexString (hex:String) -> UIColor {
