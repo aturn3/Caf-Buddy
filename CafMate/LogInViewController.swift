@@ -30,10 +30,9 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
     override func viewDidAppear(animated: Bool) {
         
         super.viewDidAppear(animated)
-        var theCurrentUser = PFUser.currentUser()
-        
-        if(theCurrentUser == nil){
-        let logInViewController:PFLogInViewController = PFLogInViewController()
+        if(!LoggedIn){
+        //let logInViewController:PFLogInViewController = PFLogInViewController()
+        let logInViewController:PFLogInViewController = MyLoginViewController()
         logInViewController.delegate = self
         let signUpViewController = PFSignUpViewController()
         signUpViewController.delegate = self

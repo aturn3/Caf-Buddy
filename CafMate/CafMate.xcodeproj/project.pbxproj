@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D8E4FCCB1A0ED319005C91F7 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E4FCCA1A0ED319005C91F7 /* ParseUI.framework */; };
+		D8E4FCD11A0F300A005C91F7 /* MyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E4FCD01A0F300A005C91F7 /* MyLoginViewController.swift */; };
 		E00ECCA31A0EE6FF00582CCC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00ECCA21A0EE6FF00582CCC /* Social.framework */; };
 		E00ECCA51A0EE70600582CCC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00ECCA41A0EE70600582CCC /* Accounts.framework */; };
 		FF69541F1A0E9E580076EC8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69541E1A0E9E580076EC8F /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		D8E4FCCA1A0ED319005C91F7 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		D8E4FCD01A0F300A005C91F7 /* MyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLoginViewController.swift; sourceTree = "<group>"; };
 		E00ECCA21A0EE6FF00582CCC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E00ECCA41A0EE70600582CCC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FF6954191A0E9E580076EC8F /* CafMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +156,7 @@
 				FF69541E1A0E9E580076EC8F /* AppDelegate.swift */,
 				FFE29FD61A0ED8B30050FD66 /* Utilities */,
 				FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */,
+				D8E4FCD01A0F300A005C91F7 /* MyLoginViewController.swift */,
 				FF6954201A0E9E580076EC8F /* FirstViewController.swift */,
 				FF6954221A0E9E580076EC8F /* SecondViewController.swift */,
 				FF6954241A0E9E580076EC8F /* Main.storyboard */,
@@ -317,6 +320,7 @@
 				FF69541F1A0E9E580076EC8F /* AppDelegate.swift in Sources */,
 				FFE29FD51A0ED8690050FD66 /* Utilities.swift in Sources */,
 				FF6954211A0E9E580076EC8F /* FirstViewController.swift in Sources */,
+				D8E4FCD11A0F300A005C91F7 /* MyLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
