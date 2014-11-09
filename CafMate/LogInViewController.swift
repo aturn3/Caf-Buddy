@@ -124,8 +124,8 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
                 if (emailEnd != "@stolaf.edu" )
                 {
                     isValid = false
-                    println("Sorry we only except St Olaf Emails")
-                    message = message+" Email Invalid, Sorry we only except St Olaf Emails."
+                    println("Sorry we only accept St Olaf Emails")
+                    message = message+" Email Invalid, Sorry we only accept St Olaf Emails."
                     break
                 }
                 
@@ -135,9 +135,9 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
                 break;
             }
             
-            if ((fieldValue == nil) || fieldValue?.length <= 8) { // check completion
+            if ((fieldValue == nil) || fieldValue?.length < 8) { // check completion
                 isValid = false;
-                message = message+" Password needs to be longer than 8 characters."
+                message = message+" Password needs to be at least 8 characters long."
                 break;
             }
             
@@ -195,7 +195,6 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
                 NSLog("%@", error)
             }
         }
-        
         
         /*var screenwidth = Float(self.view.frame.size.width)
         var thewid = 200
