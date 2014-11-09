@@ -19,7 +19,8 @@ extension String {
 }
 
 class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSignUpViewControllerDelegate {
-    var LoggedIn = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,7 +30,9 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
     override func viewDidAppear(animated: Bool) {
         
         super.viewDidAppear(animated)
-        if(!LoggedIn){
+        var theCurrentUser = PFUser.currentUser()
+        
+        if(theCurrentUser == nil){
         let logInViewController:PFLogInViewController = PFLogInViewController()
         logInViewController.delegate = self
         let signUpViewController = PFSignUpViewController()
@@ -39,11 +42,14 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
         logInViewController.signUpController = signUpViewController
         presentViewController(logInViewController, animated: true, completion: nil)
         }
-        else { //logged in so segue to new one
-            self.performSegueWithIdentifier("fromLoginToFeed", sender: self)
+        else {
+            goToMainFeed()
         }
     }
     
+    func goToMainFeed() {
+        self.performSegueWithIdentifier("fromLoginToFeed", sender: self)
+    }
     
     
     func logInViewController(logInController: PFLogInViewController!, shouldBeginLogInWithUsername username: String!, password: String!) -> Bool {
@@ -68,7 +74,7 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
         
         dismissViewControllerAnimated(true, completion: nil)
         println("User Login Succesful")
-        LoggedIn=true
+        goToMainFeed()
     }
     
     
