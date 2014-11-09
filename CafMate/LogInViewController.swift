@@ -30,7 +30,8 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
         
         super.viewDidAppear(animated)
         if(!LoggedIn){
-        let logInViewController:PFLogInViewController = PFLogInViewController()
+        //let logInViewController:PFLogInViewController = PFLogInViewController()
+        let logInViewController:PFLogInViewController = MyLoginViewController()
         logInViewController.delegate = self
         let signUpViewController = PFSignUpViewController()
         signUpViewController.delegate = self
