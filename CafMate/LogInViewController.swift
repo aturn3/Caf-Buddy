@@ -19,7 +19,8 @@ extension String {
 }
 
 class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSignUpViewControllerDelegate {
-    var LoggedIn = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -40,8 +41,14 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
         logInViewController.signUpController = signUpViewController
         presentViewController(logInViewController, animated: true, completion: nil)
         }
+        else {
+            goToMainFeed()
+        }
     }
     
+    func goToMainFeed() {
+        self.performSegueWithIdentifier("fromLoginToFeed", sender: self)
+    }
     
     
     func logInViewController(logInController: PFLogInViewController!, shouldBeginLogInWithUsername username: String!, password: String!) -> Bool {
@@ -66,7 +73,7 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
         
         dismissViewControllerAnimated(true, completion: nil)
         println("User Login Succesful")
-        LoggedIn=true
+        goToMainFeed()
     }
     
     
@@ -207,5 +214,6 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
         myTextField.backgroundColor = UIColor.redColor()
         myTextField.text = "some string"*/
     }
+    
     
 }
