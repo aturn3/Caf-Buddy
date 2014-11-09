@@ -20,7 +20,6 @@ extension String {
 
 class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSignUpViewControllerDelegate {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,8 +28,10 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
     
     override func viewDidAppear(animated: Bool) {
         
+        var currentUser = PFUser.currentUser()
+        
         super.viewDidAppear(animated)
-        if(!LoggedIn){
+        if(currentUser == nil){
         //let logInViewController:PFLogInViewController = PFLogInViewController()
         let logInViewController:PFLogInViewController = MyLoginViewController()
         logInViewController.delegate = self
