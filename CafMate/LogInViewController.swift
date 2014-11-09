@@ -7,9 +7,19 @@
 //
 
 import UIKit
+extension String {
+    subscript (r: Range<Int>) -> String {
+        get {
+            let startIndex = advance(self.startIndex, r.startIndex)
+            let endIndex = advance(startIndex, r.endIndex - r.startIndex)
+            
+            return self[Range(start: startIndex, end: endIndex)]
+        }
+    }
+}
 
-class LogInViewController: UIViewController {
-    
+class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSignUpViewControllerDelegate {
+    var LoggedIn = false
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
