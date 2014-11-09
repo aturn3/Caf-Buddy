@@ -8,16 +8,8 @@
 
 import UIKit
 
-
 class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
-    /*
-    
-    }*/
-    
-    
 
-    
-    
     let statusBarHeight = 20;
     
     let mealTypesArr = ["Breakfast","Lunch","Dinner"]
@@ -53,24 +45,14 @@ class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
         
         initInterface();
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        
-    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     
     func initInterface() {
-        /*PFCloud.callFunctionInBackground("getMealsToday", withParameters:nil) {
-            (result: AnyObject!, error: NSError!) -> Void in
-            if error == nil {
-                println(result)
-            }*/
-       
-            
         var labelWidth = 325;
         
         self.view.backgroundColor = colorWithHexString(COLOR_MAIN_BACKGROUND_OFFWHITE)
@@ -225,11 +207,9 @@ class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
             mealTimePickerView.selectRow(0, inComponent: 1, animated: false)
         }
         else {
-            let time = timeRange[row] as? NSString
-            var stringLength = countElements(time as String)
-            var stringVersion = time as String
-            stringVersion = stringVersion.substringToIndex(advance(stringVersion.startIndex, stringLength-3))
-            var theTime = getCurDateTime(stringVersion)
+            
+            let time = timeRangeDates[row] as? NSDate
+            var theTime = time
             
             if (component == 0) {
                 chosenStartTime = theTime
@@ -289,10 +269,10 @@ class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
         var calendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)
         var timeArr = theTime.componentsSeparatedByString(":")
         NSLog(timeArr[0])
-        var components = calendar?.components(NSCalendarUnit.YearCalendarUnit | NSCalendarUnit.MonthCalendarUnit | NSCalendarUnit.DayCalendarUnit, fromDate: now)
-        components?.hour = timeArr[0].toInt()!
-        components?.minute = timeArr[1].toInt()!
-        var curDate = calendar?.dateFromComponents(components!)
+        var components = calendar.components(NSCalendarUnit.YearCalendarUnit | NSCalendarUnit.MonthCalendarUnit | NSCalendarUnit.DayCalendarUnit, fromDate: now)
+        components.hour = timeArr[0].toInt()!
+        components.minute = timeArr[1].toInt()!
+        var curDate = calendar.dateFromComponents(components)
         return curDate!
         
     }
@@ -323,7 +303,6 @@ class SecondViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
         }
         
     }
-    
-    
-}
 
+
+}
