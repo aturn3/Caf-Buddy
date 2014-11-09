@@ -20,7 +20,6 @@ extension String {
 
 class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSignUpViewControllerDelegate {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,11 +28,12 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
     
     override func viewDidAppear(animated: Bool) {
         
-        super.viewDidAppear(animated)
-        var theCurrentUser = PFUser.currentUser()
+        var currentUser = PFUser.currentUser()
         
-        if(theCurrentUser == nil){
-        let logInViewController:PFLogInViewController = PFLogInViewController()
+        super.viewDidAppear(animated)
+        if(currentUser == nil){
+        //let logInViewController:PFLogInViewController = PFLogInViewController()
+        let logInViewController:PFLogInViewController = MyLoginViewController()
         logInViewController.delegate = self
         let signUpViewController = PFSignUpViewController()
         signUpViewController.delegate = self
@@ -134,8 +134,8 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
                 if (emailEnd != "@stolaf.edu" )
                 {
                     isValid = false
-                    println("Sorry we only except St Olaf Emails")
-                    message = message+" Email Invalid, Sorry we only except St Olaf Emails."
+                    println("Sorry we only accept St Olaf Emails")
+                    message = message+" Email Invalid, Sorry we only accept St Olaf Emails."
                     break
                 }
                 
@@ -145,9 +145,9 @@ class LogInViewController: UIViewController,PFLogInViewControllerDelegate,PFSign
                 break;
             }
             
-            if ((fieldValue == nil) || fieldValue?.length <= 8) { // check completion
+            if ((fieldValue == nil) || fieldValue?.length < 8) { // check completion
                 isValid = false;
-                message = message+" Password needs to be longer than 8 characters."
+                message = message+" Password needs to be at least 8 characters long."
                 break;
             }
             

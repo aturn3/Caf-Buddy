@@ -10,6 +10,7 @@
 		49B76CF01A0F0C8200722376 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B76CEF1A0F0C8100722376 /* CustomTableViewCell.swift */; };
 		49B76CF41A0F562000722376 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B76CF31A0F562000722376 /* SwiftyJSON.swift */; };
 		D8E4FCCB1A0ED319005C91F7 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E4FCCA1A0ED319005C91F7 /* ParseUI.framework */; };
+		D8E4FCD11A0F300A005C91F7 /* MyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E4FCD01A0F300A005C91F7 /* MyLoginViewController.swift */; };
 		E00ECCA31A0EE6FF00582CCC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00ECCA21A0EE6FF00582CCC /* Social.framework */; };
 		E00ECCA51A0EE70600582CCC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00ECCA41A0EE70600582CCC /* Accounts.framework */; };
 		FF69541F1A0E9E580076EC8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69541E1A0E9E580076EC8F /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		49B76CEF1A0F0C8100722376 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		49B76CF31A0F562000722376 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D8E4FCCA1A0ED319005C91F7 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		D8E4FCD01A0F300A005C91F7 /* MyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLoginViewController.swift; sourceTree = "<group>"; };
 		E00ECCA21A0EE6FF00582CCC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E00ECCA41A0EE70600582CCC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FF6954191A0E9E580076EC8F /* CafMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,9 @@
 		FF6954361A0E9E580076EC8F /* CafMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafMateTests.swift; sourceTree = "<group>"; };
 		FFA13E931A0EB06C00EE9078 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		FFA13E951A0EB07500EE9078 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FFC1D4E71A0F376C005643E0 /* feedIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedIcon@2x.png"; sourceTree = "<group>"; };
+		FFC1D4E91A0F3826005643E0 /* createNewIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createNewIcon@2x.png"; sourceTree = "<group>"; };
+		FFC1D4EA1A0F3826005643E0 /* feedIcon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedIcon2@2x.png"; sourceTree = "<group>"; };
 		FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = ../LogInViewController.swift; sourceTree = "<group>"; };
 		FFE29FBD1A0EBAFB0050FD66 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FFE29FBE1A0EBAFB0050FD66 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -148,6 +153,7 @@
 		FF69541B1A0E9E580076EC8F /* CafMate */ = {
 			isa = PBXGroup;
 			children = (
+				FFC1D4E61A0F3732005643E0 /* Images */,
 				FF69541E1A0E9E580076EC8F /* AppDelegate.swift */,
 				FFE29FD61A0ED8B30050FD66 /* Utilities */,
 				FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */,
@@ -187,6 +193,16 @@
 				FF6954351A0E9E580076EC8F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFC1D4E61A0F3732005643E0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1D4E91A0F3826005643E0 /* createNewIcon@2x.png */,
+				FFC1D4EA1A0F3826005643E0 /* feedIcon2@2x.png */,
+				FFC1D4E71A0F376C005643E0 /* feedIcon@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		FFE29FD61A0ED8B30050FD66 /* Utilities */ = {
@@ -246,9 +262,11 @@
 				TargetAttributes = {
 					FF6954181A0E9E580076EC8F = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = H35HFLS6T7;
 					};
 					FF69542F1A0E9E580076EC8F = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = H35HFLS6T7;
 						TestTargetID = FF6954181A0E9E580076EC8F;
 					};
 				};
@@ -277,6 +295,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC1D4EC1A0F3826005643E0 /* feedIcon2@2x.png in Resources */,
+				FFC1D4EB1A0F3826005643E0 /* createNewIcon@2x.png in Resources */,
+				FFC1D4E81A0F376C005643E0 /* feedIcon@2x.png in Resources */,
 				FF6954261A0E9E580076EC8F /* Main.storyboard in Resources */,
 				FF69542B1A0E9E580076EC8F /* LaunchScreen.xib in Resources */,
 				FF6954281A0E9E580076EC8F /* Images.xcassets in Resources */,
@@ -304,6 +325,7 @@
 				FFE29FD51A0ED8690050FD66 /* Utilities.swift in Sources */,
 				49B76CF41A0F562000722376 /* SwiftyJSON.swift in Sources */,
 				FF6954211A0E9E580076EC8F /* FirstViewController.swift in Sources */,
+				D8E4FCD11A0F300A005C91F7 /* MyLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +384,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Production IOS Push Services: com.stolafacm.CafMate";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Production IOS Push Services: com.stolafacm.CafMate";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -404,7 +427,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Production IOS Push Services: com.stolafacm.CafMate";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Production IOS Push Services: com.stolafacm.CafMate";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -427,6 +451,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -434,6 +460,7 @@
 				INFOPLIST_FILE = CafMate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CafMate/CafMate-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -444,6 +471,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -451,6 +480,7 @@
 				INFOPLIST_FILE = CafMate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CafMate/CafMate-Bridging-Header.h";
 			};
 			name = Release;
@@ -459,6 +489,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -470,6 +502,7 @@
 				INFOPLIST_FILE = CafMateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafMate.app/CafMate";
 			};
 			name = Debug;
@@ -478,6 +511,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -485,6 +520,7 @@
 				INFOPLIST_FILE = CafMateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafMate.app/CafMate";
 			};
 			name = Release;
