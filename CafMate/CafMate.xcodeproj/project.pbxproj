@@ -28,6 +28,7 @@
 		FFE29FCE1A0EBAFB0050FD66 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FC41A0EBAFB0050FD66 /* Security.framework */; };
 		FFE29FCF1A0EBAFB0050FD66 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FC51A0EBAFB0050FD66 /* StoreKit.framework */; };
 		FFE29FD01A0EBAFB0050FD66 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FC61A0EBAFB0050FD66 /* SystemConfiguration.framework */; };
+		FFE29FD51A0ED8690050FD66 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE29FD41A0ED8690050FD66 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		FFE29FC51A0EBAFB0050FD66 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FFE29FC61A0EBAFB0050FD66 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FFE29FD11A0EBC030050FD66 /* CafMate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CafMate-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFE29FD41A0ED8690050FD66 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E00ECCA51A0EE70600582CCC /* Accounts.framework in Frameworks */,
+				E00ECCA31A0EE6FF00582CCC /* Social.framework in Frameworks */,
 				FFE29FC71A0EBAFB0050FD66 /* AudioToolbox.framework in Frameworks */,
 				FFE29FC81A0EBAFB0050FD66 /* CFNetwork.framework in Frameworks */,
 				FFE29FC91A0EBAFB0050FD66 /* CoreGraphics.framework in Frameworks */,
@@ -86,6 +90,7 @@
 				FFE29FD01A0EBAFB0050FD66 /* SystemConfiguration.framework in Frameworks */,
 				FFA13E941A0EB06C00EE9078 /* Parse.framework in Frameworks */,
 				FFA13E961A0EB07500EE9078 /* Bolts.framework in Frameworks */,
+				D8E4FCCB1A0ED319005C91F7 /* ParseUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,9 @@
 		FF6954101A0E9E580076EC8F = {
 			isa = PBXGroup;
 			children = (
+				E00ECCA41A0EE70600582CCC /* Accounts.framework */,
+				E00ECCA21A0EE6FF00582CCC /* Social.framework */,
+				D8E4FCCA1A0ED319005C91F7 /* ParseUI.framework */,
 				FFE29FBD1A0EBAFB0050FD66 /* AudioToolbox.framework */,
 				FFE29FBE1A0EBAFB0050FD66 /* CFNetwork.framework */,
 				FFE29FBF1A0EBAFB0050FD66 /* CoreGraphics.framework */,
@@ -133,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				FF69541E1A0E9E580076EC8F /* AppDelegate.swift */,
+				FFE29FD61A0ED8B30050FD66 /* Utilities */,
 				FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */,
 				FF6954201A0E9E580076EC8F /* FirstViewController.swift */,
 				FF6954221A0E9E580076EC8F /* SecondViewController.swift */,
@@ -169,6 +178,14 @@
 				FF6954351A0E9E580076EC8F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFE29FD61A0ED8B30050FD66 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FFE29FD41A0ED8690050FD66 /* Utilities.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +292,7 @@
 				49B76CF01A0F0C8200722376 /* CustomTableViewCell.swift in Sources */,
 				FF6954231A0E9E580076EC8F /* SecondViewController.swift in Sources */,
 				FF69541F1A0E9E580076EC8F /* AppDelegate.swift in Sources */,
+				FFE29FD51A0ED8690050FD66 /* Utilities.swift in Sources */,
 				FF6954211A0E9E580076EC8F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
