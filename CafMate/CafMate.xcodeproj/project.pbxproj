@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D8E4FCCB1A0ED319005C91F7 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E4FCCA1A0ED319005C91F7 /* ParseUI.framework */; };
+		D8E4FCD11A0F300A005C91F7 /* MyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E4FCD01A0F300A005C91F7 /* MyLoginViewController.swift */; };
 		E00ECCA31A0EE6FF00582CCC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00ECCA21A0EE6FF00582CCC /* Social.framework */; };
 		E00ECCA51A0EE70600582CCC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00ECCA41A0EE70600582CCC /* Accounts.framework */; };
 		FF69541F1A0E9E580076EC8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69541E1A0E9E580076EC8F /* AppDelegate.swift */; };
@@ -19,6 +20,9 @@
 		FF6954371A0E9E580076EC8F /* CafMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6954361A0E9E580076EC8F /* CafMateTests.swift */; };
 		FFA13E941A0EB06C00EE9078 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA13E931A0EB06C00EE9078 /* Parse.framework */; };
 		FFA13E961A0EB07500EE9078 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA13E951A0EB07500EE9078 /* Bolts.framework */; };
+		FFC1D4E81A0F376C005643E0 /* feedIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC1D4E71A0F376C005643E0 /* feedIcon@2x.png */; };
+		FFC1D4EB1A0F3826005643E0 /* createNewIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC1D4E91A0F3826005643E0 /* createNewIcon@2x.png */; };
+		FFC1D4EC1A0F3826005643E0 /* feedIcon2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC1D4EA1A0F3826005643E0 /* feedIcon2@2x.png */; };
 		FFE29FBC1A0EB3A90050FD66 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */; };
 		FFE29FC71A0EBAFB0050FD66 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FBD1A0EBAFB0050FD66 /* AudioToolbox.framework */; };
 		FFE29FC81A0EBAFB0050FD66 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FBE1A0EBAFB0050FD66 /* CFNetwork.framework */; };
@@ -30,6 +34,7 @@
 		FFE29FCE1A0EBAFB0050FD66 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FC41A0EBAFB0050FD66 /* Security.framework */; };
 		FFE29FCF1A0EBAFB0050FD66 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FC51A0EBAFB0050FD66 /* StoreKit.framework */; };
 		FFE29FD01A0EBAFB0050FD66 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE29FC61A0EBAFB0050FD66 /* SystemConfiguration.framework */; };
+		FFE29FD51A0ED8690050FD66 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE29FD41A0ED8690050FD66 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		D8E4FCCA1A0ED319005C91F7 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		D8E4FCD01A0F300A005C91F7 /* MyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLoginViewController.swift; sourceTree = "<group>"; };
 		E00ECCA21A0EE6FF00582CCC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E00ECCA41A0EE70600582CCC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FF6954191A0E9E580076EC8F /* CafMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +65,9 @@
 		FF6954361A0E9E580076EC8F /* CafMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafMateTests.swift; sourceTree = "<group>"; };
 		FFA13E931A0EB06C00EE9078 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		FFA13E951A0EB07500EE9078 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FFC1D4E71A0F376C005643E0 /* feedIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedIcon@2x.png"; sourceTree = "<group>"; };
+		FFC1D4E91A0F3826005643E0 /* createNewIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createNewIcon@2x.png"; sourceTree = "<group>"; };
+		FFC1D4EA1A0F3826005643E0 /* feedIcon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedIcon2@2x.png"; sourceTree = "<group>"; };
 		FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = ../LogInViewController.swift; sourceTree = "<group>"; };
 		FFE29FBD1A0EBAFB0050FD66 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FFE29FBE1A0EBAFB0050FD66 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -71,6 +80,7 @@
 		FFE29FC51A0EBAFB0050FD66 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FFE29FC61A0EBAFB0050FD66 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FFE29FD11A0EBC030050FD66 /* CafMate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CafMate-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFE29FD41A0ED8690050FD66 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +152,11 @@
 		FF69541B1A0E9E580076EC8F /* CafMate */ = {
 			isa = PBXGroup;
 			children = (
+				FFC1D4E61A0F3732005643E0 /* Images */,
 				FF69541E1A0E9E580076EC8F /* AppDelegate.swift */,
+				FFE29FD61A0ED8B30050FD66 /* Utilities */,
 				FFE29FBB1A0EB3A90050FD66 /* LogInViewController.swift */,
+				D8E4FCD01A0F300A005C91F7 /* MyLoginViewController.swift */,
 				FF6954201A0E9E580076EC8F /* FirstViewController.swift */,
 				FF6954221A0E9E580076EC8F /* SecondViewController.swift */,
 				FF6954241A0E9E580076EC8F /* Main.storyboard */,
@@ -178,6 +191,24 @@
 				FF6954351A0E9E580076EC8F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFC1D4E61A0F3732005643E0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1D4E91A0F3826005643E0 /* createNewIcon@2x.png */,
+				FFC1D4EA1A0F3826005643E0 /* feedIcon2@2x.png */,
+				FFC1D4E71A0F376C005643E0 /* feedIcon@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FFE29FD61A0ED8B30050FD66 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FFE29FD41A0ED8690050FD66 /* Utilities.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC1D4EC1A0F3826005643E0 /* feedIcon2@2x.png in Resources */,
+				FFC1D4EB1A0F3826005643E0 /* createNewIcon@2x.png in Resources */,
+				FFC1D4E81A0F376C005643E0 /* feedIcon@2x.png in Resources */,
 				FF6954261A0E9E580076EC8F /* Main.storyboard in Resources */,
 				FF69542B1A0E9E580076EC8F /* LaunchScreen.xib in Resources */,
 				FF6954281A0E9E580076EC8F /* Images.xcassets in Resources */,
@@ -285,7 +319,9 @@
 				FFE29FBC1A0EB3A90050FD66 /* LogInViewController.swift in Sources */,
 				FF6954231A0E9E580076EC8F /* SecondViewController.swift in Sources */,
 				FF69541F1A0E9E580076EC8F /* AppDelegate.swift in Sources */,
+				FFE29FD51A0ED8690050FD66 /* Utilities.swift in Sources */,
 				FF6954211A0E9E580076EC8F /* FirstViewController.swift in Sources */,
+				D8E4FCD11A0F300A005C91F7 /* MyLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
